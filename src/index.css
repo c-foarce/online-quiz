@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "Hylia Serif";
+    src: url("./assets/fonts/HyliaSerifBeta-Regular.otf") format("opentype");
+    font-weight: 700;
+    font-style:normal;
+}
+
+body {
+    font-family: "Hylia Serif", sans-serif;
+}

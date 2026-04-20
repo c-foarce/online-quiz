@@ -1,0 +1,42 @@
+.background {
+  position: fixed;
+  inset: 0;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  z-index: 0;
+}
+.overlay{
+    position:fixed;
+    inset:0;
+
+    background: rgba(0,0,0,0.4);
+
+    z-index: 1;
+}
+.app {
+  position: relative;
+  min-height: 100vh;
+}
+.wrapper {
+  position: relative;
+  z-index: 1;
+
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+
+  padding: 2rem;
+  width: 90%;
+  max-width: 800px;
+
+  text-align: center;
+}
