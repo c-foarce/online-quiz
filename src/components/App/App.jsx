@@ -11,11 +11,13 @@ function App() {
 
       <div
         className={styles.background}
-        style={{ backgroundImage:  `url(${imageBackground})`}}
+        style={{ backgroundImage: `url(${imageBackground})` }}
       />
       <div className={styles.overlay} />
 
       <div className={styles.wrapper}>
+        <h1 className={styles.pageTitle}>Testing Text outside the main box layer</h1>
+
         <div className={styles.container}>
           <h1>Title</h1>
           <Welcome />

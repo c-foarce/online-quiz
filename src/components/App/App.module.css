@@ -16,6 +16,14 @@
 
     z-index: 1;
 }
+.pageTitle {
+    color: white;
+
+    margin-bottom: 100px;
+    margin-top: 50px;
+
+    text-align:center;
+}
 .app {
   position: relative;
   min-height: 100vh;
@@ -26,17 +34,22 @@
 
   min-height: 100vh;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+display:grid;
+grid-template-rows: auto 1fr;
+
+justify-items: center   ;
+
 }
 .container {
   background: rgba(255, 255, 255, 0.6);
-  border-radius: 12px;
 
+  border-radius: 12px;
   padding: 2rem;
   width: 90%;
   max-width: 800px;
+  max-height:60%;
 
   text-align: center;
+  color: black;
+  justify-content: center;
 }
