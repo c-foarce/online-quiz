@@ -1,0 +1,29 @@
+.layout {
+  position: relative;
+  z-index: 2;
+
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.6);
+  color: black;
+
+  width: 90%;
+  max-width: 800px;
+
+  min-height: 400px;
+  max-height: 80vh;
+
+  padding: 2rem;
+  border-radius: 12px;
+
+  text-align: center;
+
+  overflow: auto;
+}
