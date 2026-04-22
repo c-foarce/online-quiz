@@ -1,3 +1,7 @@
+:root {
+    font-size: 1.5em;
+}
+
 .layout {
   position: relative;
   z-index: 2;
@@ -11,7 +15,7 @@
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.5);
   color: black;
 
   width: 90%;
@@ -20,8 +24,12 @@
   min-height: 400px;
   max-height: 80vh;
 
-  padding: 2rem;
-  border-radius: 12px;
+  padding: 1em;
+  border-radius: 6px;
+
+  border-style: solid;
+  border-color: rgba(230,200,0);
+  border-width: 0.25em;
 
   text-align: center;
 
