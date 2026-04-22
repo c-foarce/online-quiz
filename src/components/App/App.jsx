@@ -7,7 +7,7 @@ import imageBackground from '../../assets/images/zelda-quiz-bg.jpg'
 
 function App() {
   return (
-    <div className={styles.app}>
+    <>
 
       <div
         className={styles.background}
@@ -24,7 +24,7 @@ function App() {
         </div>
       </div>
 
-    </div>
+    </>
   );
 }
 
