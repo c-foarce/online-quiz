@@ -1,0 +1,37 @@
+:root {
+    font-size: 1.5em;
+}
+
+.layout {
+  position: relative;
+  z-index: 2;
+
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.5);
+  color: black;
+
+  width: 90%;
+  max-width: 800px;
+
+  min-height: 400px;
+  max-height: 80vh;
+
+  padding: 1em;
+  border-radius: 6px;
+
+  border-style: solid;
+  border-color: rgba(230,200,0);
+  border-width: 0.25em;
+
+  text-align: center;
+
+  overflow: auto;
+}
