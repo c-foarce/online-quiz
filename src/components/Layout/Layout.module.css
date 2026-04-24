@@ -1,5 +1,5 @@
 :root {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 .layout {
@@ -15,7 +15,7 @@
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.4);
   color: black;
 
   width: 90%;
@@ -28,10 +28,12 @@
   border-radius: 6px;
 
   border-style: solid;
-  border-color: rgba(230,200,0);
+  border-color: rgba(200, 160, 0);
   border-width: 0.25em;
 
   text-align: center;
 
   overflow: auto;
+
+  gap: 1em;
 }

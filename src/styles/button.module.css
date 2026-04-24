@@ -1,0 +1,12 @@
+/*Base button rules, most other buttons will inherit these*/
+/*As such, only apply boilerplate styling, size and such*/
+.button {
+    border-radius: 4px;
+    height:100px;
+    width:100px;
+}
+
+
+.startButton {
+    background-color: rgba(0,100,100);
+}
