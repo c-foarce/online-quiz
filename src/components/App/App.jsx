@@ -35,10 +35,24 @@ function App() {
         <div className={styles.overlay}>
 
           <Layout>
-            {screen === "welcome" && (<Welcome />)}
-            {screen === "quiz" && (<QuizPage />)}
-            {screen === "howto" && (<HowTo />)}
-            {screen === "results" && (<Results />)}
+            {screen === "welcome" && (
+              <Welcome
+                onHowTo={() => goTo("howto")}
+                onStart={() => goTo("quiz")}
+              />)}
+            {screen === "howto" && (
+              <HowTo
+                onBack={() => goTo("welcome")}
+                onStart={() => goTo("quiz")}
+              />)}
+            {screen === "quiz" && (
+              <QuizPage
+                onFinish={() => goTo("results")}
+              />)}
+            {screen === "results" && (
+              <Results
+                onReturn={() => goTo("welcome")}
+              />)}
 
           </Layout>
 
