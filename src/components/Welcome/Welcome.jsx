@@ -10,18 +10,20 @@ function Welcome({ onStart, onHowTo }) {
     return (
         <>
             <h1 className={textStyles.title}>Welcome to my Zelda Quiz! Please choose an option:</h1>
-            <button
-                className={clsx(buttonStyles.button, buttonStyles.helpButton)}
-                onClick={onHowTo}
-            >
-                Help
-            </button>
+
             <button
                 className={clsx(buttonStyles.button, buttonStyles.startButton)}
                 onClick={onStart}
             >
                 Start Quiz
             </button>
+            <button
+                className={clsx(buttonStyles.button, buttonStyles.helpButton)}
+                onClick={onHowTo}
+            >
+                Help
+            </button>
+
         </>
     )
 }

@@ -11,18 +11,17 @@ function HowTo({ onBack, onStart }) {
         <>
             <h1 className={styles.title}>This is placeholder text, expand later</h1>
             <p>------</p>
-
-            <button
-                className={clsx(buttonStyles.button, buttonStyles.backButton)}
-                onClick={onBack}
-            >
-                Return
-            </button>
             <button
                 className={clsx(buttonStyles.button, buttonStyles.startButton)}
                 onClick={onStart}
             >
                 Start Quiz
+            </button>
+            <button
+                className={clsx(buttonStyles.button, buttonStyles.backButton)}
+                onClick={onBack}
+            >
+                Return
             </button>
         </>
     )
