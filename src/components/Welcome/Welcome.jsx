@@ -6,12 +6,22 @@ import styles from './Welcome.module.css'
 //to help with applying various modules to one element easier, clsx import
 import clsx from "clsx"
 
-function Welcome() {
+function Welcome({ onStart, onHowTo }) {
     return (
         <>
             <h1 className={textStyles.title}>Welcome to my Zelda Quiz! Please choose an option:</h1>
-            <button className={clsx(buttonStyles.button, buttonStyles.startButton)} onClick={() => alert("Hello")}>Test 1</button>
-            <button className={clsx(buttonStyles.button, buttonStyles.helpButton)}>Test 2</button>
+            <button
+                className={clsx(buttonStyles.button, buttonStyles.helpButton)}
+                onClick={onHowTo}
+            >
+                Help
+            </button>
+            <button
+                className={clsx(buttonStyles.button, buttonStyles.startButton)}
+                onClick={onStart}
+            >
+                Start Quiz
+            </button>
         </>
     )
 }

@@ -13,8 +13,29 @@
 
 
 .startButton {
-    background-color: rgba(0, 100, 100);
+    background-color: blue;
 }
 .helpButton {
-    background-color: rgba(100,100,0);
+    background-color: pink;
+}
+.backButton{
+    background-color: darkred;
+}
+.resultsButton{
+    background-color: orange;
+}
+
+
+
+
+
+
+
+
+/*These are primarily for quiz logic*/
+.correctAnswer{
+    background-color: green;
+}
+.incorrectAnswer{
+    background-color:red;
 }
