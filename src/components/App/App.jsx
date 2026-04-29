@@ -16,6 +16,10 @@ import imageBackground from '../../assets/images/zelda-quiz-bg.jpg'
 
 
 function App() {
+
+  const [score,setScore] = useState(0) //stores and sets the user's score, in App since it's the lowest ancestor of the components that need it
+
+  // used for navigating the various components using state
   const [screen, setScreen] = useState('welcome')
 
   //function that sets the screen to be displayed inside the central box
