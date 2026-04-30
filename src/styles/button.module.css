@@ -13,13 +13,13 @@
 
 
 .startButton {
-    background-color: blue;
+    background-color: lightblue;
 }
 .helpButton {
     background-color: pink;
 }
 .backButton{
-    background-color: red;
+    background-color: lightcoral;
 }
 .resultsButton{
     background-color: orange;
