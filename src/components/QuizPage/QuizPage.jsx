@@ -37,18 +37,20 @@ function QuizPage({ onFinish }) {
 
     return (
         <>
-            <h1>Placeholder text. Quiz Page</h1>
+            <div className={styles.content}>
+                <h1>Placeholder text. Quiz Page</h1>
 
 
-            {/*
+                {/*
              This will likely become: Question {currentQuestion} / {totalQuestions}
             */}
-            <h2>
-                Counter: {currentQuestion}
-            </h2>
-            <p>These buttons will be removed later, this is currently for app navigation</p>
+                <h2>
+                    Counter: {currentQuestion}
+                </h2>
+                <p>These buttons will be removed later, this is currently for app navigation</p>
 
-            <div className={styles.buttonRow}>
+            </div>
+            <div className={styles.actions}>
                 <button
                     className={clsx(buttonStyles.button, buttonStyles.resultsButton)}
                     onClick={onFinish}
@@ -60,8 +62,12 @@ function QuizPage({ onFinish }) {
                     className={clsx(buttonStyles.button, buttonStyles.submitButton)}
                     onClick={handleSubmitAnswer}
                 >
-                    Increment counter                </button>
+                    Increment counter
+                </button>
+
             </div>
+            
+
         </>
     )
 }

@@ -26,14 +26,14 @@
 
 
   border-radius: 6px;
-
   border-style: solid;
   border-color: rgba(200, 160, 0);
   border-width: 0.25em;
 
   text-align: center;
 
-  overflow: auto;
+  display: flex;
+  flex-direction: column;
 
-  gap: 1em;
+  overflow: hidden;
 }

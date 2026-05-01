@@ -1,7 +1,29 @@
-.buttonRow {
+/* .buttonRow {
     display: flex;
     gap: 20px;
     align-items: center;
-        justify-content: center;
+    justify-content: center;
 
+} */
+
+
+
+
+.content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+  min-height: 0;
 }
+
+.actions {
+  flex-shrink: 0;
+
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
+  padding: 1rem;
+
+  overflow-x:auto;
+} 

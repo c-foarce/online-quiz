@@ -1,0 +1,15 @@
+.content {
+  flex: 1;
+  min-height: 0;        
+  overflow-y: auto;     
+}
+
+.actions {
+  flex-shrink: 0;       /* keeps the foter pinned to the bottom */
+
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
+  padding: 1rem;
+}
