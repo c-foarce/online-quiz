@@ -1,0 +1,784 @@
+{
+  "answers": [
+    {
+      "id": 1,
+      "label": "Eastern Palace",
+      "type": "dungeon",
+      "game": "Link to the Past"
+    },
+    {
+      "id": 2,
+      "label": "Desert Palace",
+      "type": "dungeon",
+      "game": "Link to the Past"
+    },
+    {
+      "id": 3,
+      "label": "Tower of Hera",
+      "type": "dungeon",
+      "game": "Link to the Past"
+    },
+    {
+      "id": 4,
+      "label": "Hyrule Castle",
+      "type": "dungeon",
+      "game": "Link to the Past"
+    },
+    {
+      "id": 5,
+      "label": "Palace of Darkness",
+      "type": "dungeon",
+      "game": "Link to the Past"
+    },
+    {
+      "id": 6,
+      "label": "Swamp Palace",
+      "type": "dungeon",
+      "game": "Link to the Past"
+    },
+    {
+      "id": 7,
+      "label": "Skull Woods",
+      "type": "dungeon",
+      "game": "Link to the Past"
+    },
+    {
+      "id": 8,
+      "label": "Thieves' Town",
+      "type": "dungeon",
+      "game": "Link to the Past"
+    },
+    {
+      "id": 9,
+      "label": "Ice Palace",
+      "type": "dungeon",
+      "game": "Link to the Past"
+    },
+    {
+      "id": 10,
+      "label": "Misery Mire",
+      "type": "dungeon",
+      "game": "Link to the Past"
+    },
+    {
+      "id": 11,
+      "label": "Turtle Rock",
+      "type": "dungeon",
+      "game": "Link to the Past"
+    },
+    {
+      "id": 12,
+      "label": "Ganon's Tower",
+      "type": "dungeon",
+      "game": "Link to the Past"
+    },
+    {
+      "id": 13,
+      "label": "Tail Cave",
+      "type": "dungeon",
+      "game": "Link's Awakening"
+    },
+    {
+      "id": 14,
+      "label": "Bottle Grotto",
+      "type": "dungeon",
+      "game": "Link's Awakening"
+    },
+    {
+      "id": 15,
+      "label": "Key Cavern",
+      "type": "dungeon",
+      "game": "Link's Awakening"
+    },
+    {
+      "id": 16,
+      "label": "Angler's Tunnel",
+      "type": "dungeon",
+      "game": "Link's Awakening"
+    },
+    {
+      "id": 17,
+      "label": "Catfish's Maw",
+      "type": "dungeon",
+      "game": "Link's Awakening"
+    },
+    {
+      "id": 18,
+      "label": "Face Shrine",
+      "type": "dungeon",
+      "game": "Link's Awakening"
+    },
+    {
+      "id": 19,
+      "label": "Eagle's Tower",
+      "type": "dungeon",
+      "game": "Link's Awakening"
+    },
+    {
+      "id": 20,
+      "label": "Turtle Rock",
+      "type": "dungeon",
+      "game": "Link's Awakening"
+    },
+    {
+      "id": 21,
+      "label": "Wind Fish's Egg",
+      "type": "dungeon",
+      "game": "Link's Awakening"
+    },
+    {
+      "id": 22,
+      "label": "Color Dungeon",
+      "type": "dungeon",
+      "game": "Link's Awakening"
+    },
+    {
+      "id": 23,
+      "label": "Inside the Deku Tree",
+      "type": "dungeon",
+      "game": "Ocarina of Time"
+    },
+    {
+      "id": 24,
+      "label": "Dodongo's Cavern",
+      "type": "dungeon",
+      "game": "Ocarina of Time"
+    },
+    {
+      "id": 25,
+      "label": "Inside Jabu-Jabu's Belly",
+      "type": "dungeon",
+      "game": "Ocarina of Time"
+    },
+    {
+      "id": 26,
+      "label": "Forest Temple",
+      "type": "dungeon",
+      "game": "Ocarina of Time"
+    },
+    {
+      "id": 27,
+      "label": "Fire Temple",
+      "type": "dungeon",
+      "game": "Ocarina of Time"
+    },
+    {
+      "id": 28,
+      "label": "Water Temple",
+      "type": "dungeon",
+      "game": "Ocarina of Time"
+    },
+    {
+      "id": 29,
+      "label": "Shadow Temple",
+      "type": "dungeon",
+      "game": "Ocarina of Time"
+    },
+    {
+      "id": 30,
+      "label": "Spirit Temple",
+      "type": "dungeon",
+      "game": "Ocarina of Time"
+    },
+    {
+      "id": 31,
+      "label": "Ganon's Castle",
+      "type": "dungeon",
+      "game": "Ocarina of Time"
+    },
+    {
+      "id": 32,
+      "label": "Woodfall Temple",
+      "type": "dungeon",
+      "game": "Majora's Mask"
+    },
+    {
+      "id": 33,
+      "label": "Snowhead Temple",
+      "type": "dungeon",
+      "game": "Majora's Mask"
+    },
+    {
+      "id": 34,
+      "label": "Great Bay Temple",
+      "type": "dungeon",
+      "game": "Majora's Mask"
+    },
+    {
+      "id": 35,
+      "label": "Stone Tower Temple",
+      "type": "dungeon",
+      "game": "Majora's Mask"
+    },
+    {
+      "id": 36,
+      "label": "Gnarled Root Dungeon",
+      "type": "dungeon",
+      "game": "Oracle of Seasons"
+    },
+    {
+      "id": 37,
+      "label": "Snake's Remains",
+      "type": "dungeon",
+      "game": "Oracle of Seasons"
+    },
+    {
+      "id": 38,
+      "label": "Poison Moth's Lair",
+      "type": "dungeon",
+      "game": "Oracle of Seasons"
+    },
+    {
+      "id": 39,
+      "label": "Dancing Dragon Dungeon",
+      "type": "dungeon",
+      "game": "Oracle of Seasons"
+    },
+    {
+      "id": 40,
+      "label": "Unicorn's Cave",
+      "type": "dungeon",
+      "game": "Oracle of Seasons"
+    },
+    {
+      "id": 41,
+      "label": "Ancient Ruins",
+      "type": "dungeon",
+      "game": "Oracle of Seasons"
+    },
+    {
+      "id": 42,
+      "label": "Explorer's Crypt",
+      "type": "dungeon",
+      "game": "Oracle of Seasons"
+    },
+    {
+      "id": 43,
+      "label": "Sword & Shield Maze",
+      "type": "dungeon",
+      "game": "Oracle of Seasons"
+    },
+    {
+      "id": 44,
+      "label": "Onox's Castle",
+      "type": "dungeon",
+      "game": "Oracle of Seasons"
+    },
+    {
+      "id": 45,
+      "label": "Room of Rites",
+      "type": "dungeon",
+      "game": "Oracle of Seasons"
+    },
+    {
+      "id": 46,
+      "label": "Spirit's Grave",
+      "type": "dungeon",
+      "game": "Oracle of Ages"
+    },
+    {
+      "id": 47,
+      "label": "Wing Dungeon",
+      "type": "dungeon",
+      "game": "Oracle of Ages"
+    },
+    {
+      "id": 48,
+      "label": "Moonlit Grotto",
+      "type": "dungeon",
+      "game": "Oracle of Ages"
+    },
+    {
+      "id": 49,
+      "label": "Skull Dungeon",
+      "type": "dungeon",
+      "game": "Oracle of Ages"
+    },
+    {
+      "id": 50,
+      "label": "Crown Dungeon",
+      "type": "dungeon",
+      "game": "Oracle of Ages"
+    },
+    {
+      "id": 51,
+      "label": "Mermaid's Cave",
+      "type": "dungeon",
+      "game": "Oracle of Ages"
+    },
+    {
+      "id": 52,
+      "label": "Jabu-Jabu's Belly",
+      "type": "dungeon",
+      "game": "Oracle of Ages"
+    },
+    {
+      "id": 53,
+      "label": "Ancient Tomb",
+      "type": "dungeon",
+      "game": "Oracle of Ages"
+    },
+    {
+      "id": 54,
+      "label": "Black Tower",
+      "type": "dungeon",
+      "game": "Oracle of Ages"
+    },
+    {
+      "id": 55,
+      "label": "Room of Rites",
+      "type": "dungeon",
+      "game": "Oracle of Ages"
+    },
+    {
+      "id": 56,
+      "label": "Sea of Trees",
+      "type": "dungeon",
+      "game": "Four Swords"
+    },
+    {
+      "id": 57,
+      "label": "Talus Cave",
+      "type": "dungeon",
+      "game": "Four Swords"
+    },
+    {
+      "id": 58,
+      "label": "Death Mountain",
+      "type": "dungeon",
+      "game": "Four Swords"
+    },
+    {
+      "id": 59,
+      "label": "Vaati's Palace",
+      "type": "dungeon",
+      "game": "Four Swords"
+    },
+    {
+      "id": 60,
+      "label": "Dragon Roost Cavern",
+      "type": "dungeon",
+      "game": "Wind Waker"
+    },
+    {
+      "id": 61,
+      "label": "Forbidden Woods",
+      "type": "dungeon",
+      "game": "Wind Waker"
+    },
+    {
+      "id": 62,
+      "label": "Tower of the Gods",
+      "type": "dungeon",
+      "game": "Wind Waker"
+    },
+    {
+      "id": 63,
+      "label": "Earth Temple",
+      "type": "dungeon",
+      "game": "Wind Waker"
+    },
+    {
+      "id": 64,
+      "label": "Wind Temple",
+      "type": "dungeon",
+      "game": "Wind Waker"
+    },
+    {
+      "id": 65,
+      "label": "Ganon's Castle",
+      "type": "dungeon",
+      "game": "Wind Waker"
+    },
+    {
+      "id": 66,
+      "label": "Deepwood Shrine",
+      "type": "dungeon",
+      "game": "Minish Cap"
+    },
+    {
+      "id": 67,
+      "label": "Cave of Flames",
+      "type": "dungeon",
+      "game": "Minish Cap"
+    },
+    {
+      "id": 68,
+      "label": "Fortress of Winds",
+      "type": "dungeon",
+      "game": "Minish Cap"
+    },
+    {
+      "id": 69,
+      "label": "Temple of Droplets",
+      "type": "dungeon",
+      "game": "Minish Cap"
+    },
+    {
+      "id": 70,
+      "label": "Palace of Winds",
+      "type": "dungeon",
+      "game": "Minish Cap"
+    },
+    {
+      "id": 71,
+      "label": "Dark Hyrule Castle",
+      "type": "dungeon",
+      "game": "Minish Cap"
+    },
+    {
+      "id": 72,
+      "label": "Forest Temple",
+      "type": "dungeon",
+      "game": "Twilight Princesss"
+    },
+    {
+      "id": 73,
+      "label": "Goron Mines",
+      "type": "dungeon",
+      "game": "Twilight Princesss"
+    },
+    {
+      "id": 74,
+      "label": "Lakebed Temple",
+      "type": "dungeon",
+      "game": "Twilight Princesss"
+    },
+    {
+      "id": 75,
+      "label": "Arbiter's Grounds",
+      "type": "dungeon",
+      "game": "Twilight Princesss"
+    },
+    {
+      "id": 76,
+      "label": "Snowpeak Ruins",
+      "type": "dungeon",
+      "game": "Twilight Princesss"
+    },
+    {
+      "id": 77,
+      "label": "Temple of Time",
+      "type": "dungeon",
+      "game": "Twilight Princesss"
+    },
+    {
+      "id": 78,
+      "label": "City in the Sky",
+      "type": "dungeon",
+      "game": "Twilight Princesss"
+    },
+    {
+      "id": 79,
+      "label": "Palace of Twilight",
+      "type": "dungeon",
+      "game": "Twilight Princesss"
+    },
+    {
+      "id": 80,
+      "label": "Hyrule Castle",
+      "type": "dungeon",
+      "game": "Twilight Princesss"
+    },
+    {
+      "id": 81,
+      "label": "Temple of Fire",
+      "type": "dungeon",
+      "game": "Phantom Hourglass"
+    },
+    {
+      "id": 82,
+      "label": "Temple of Wind",
+      "type": "dungeon",
+      "game": "Phantom Hourglass"
+    },
+    {
+      "id": 83,
+      "label": "Temple of Courage",
+      "type": "dungeon",
+      "game": "Phantom Hourglass"
+    },
+    {
+      "id": 84,
+      "label": "Ghost Ship",
+      "type": "dungeon",
+      "game": "Phantom Hourglass"
+    },
+    {
+      "id": 85,
+      "label": "Goron Temple",
+      "type": "dungeon",
+      "game": "Phantom Hourglass"
+    },
+    {
+      "id": 86,
+      "label": "Temple of Ice",
+      "type": "dungeon",
+      "game": "Phantom Hourglass"
+    },
+    {
+      "id": 87,
+      "label": "Mutoh's Temple",
+      "type": "dungeon",
+      "game": "Phantom Hourglass"
+    },
+    {
+      "id": 88,
+      "label": "Temple of the Ocean King",
+      "type": "dungeon",
+      "game": "Phantom Hourglass"
+    },
+    {
+      "id": 89,
+      "label": "Forest Temple",
+      "type": "dungeon",
+      "game": "Spirit Tracks"
+    },
+    {
+      "id": 90,
+      "label": "Snow Temple",
+      "type": "dungeon",
+      "game": "Spirit Tracks"
+    },
+    {
+      "id": 91,
+      "label": "Ocean Temple",
+      "type": "dungeon",
+      "game": "Spirit Tracks"
+    },
+    {
+      "id": 92,
+      "label": "Fire Temple",
+      "type": "dungeon",
+      "game": "Spirit Tracks"
+    },
+    {
+      "id": 93,
+      "label": "Sand Temple",
+      "type": "dungeon",
+      "game": "Spirit Tracks"
+    },
+    {
+      "id": 94,
+      "label": "Tower of Spirits",
+      "type": "dungeon",
+      "game": "Spirit Tracks"
+    },
+    {
+      "id": 95,
+      "label": "Skyview Temple",
+      "type": "dungeon",
+      "game": "Skyward Sword"
+    },
+    {
+      "id": 96,
+      "label": "Earth Temple",
+      "type": "dungeon",
+      "game": "Skyward Sword"
+    },
+    {
+      "id": 97,
+      "label": "Lanayru Mining Facility",
+      "type": "dungeon",
+      "game": "Skyward Sword"
+    },
+    {
+      "id": 98,
+      "label": "Ancient Cistern",
+      "type": "dungeon",
+      "game": "Skyward Sword"
+    },
+    {
+      "id": 99,
+      "label": "Sandship",
+      "type": "dungeon",
+      "game": "Skyward Sword"
+    },
+    {
+      "id": 100,
+      "label": "Fire Sanctuary",
+      "type": "dungeon",
+      "game": "Skyward Sword"
+    },
+    {
+      "id": 101,
+      "label": "Sky Keep",
+      "type": "dungeon",
+      "game": "Skyward Sword"
+    },
+    {
+      "id": 102,
+      "label": "Eastern Palace",
+      "type": "dungeon",
+      "game": "Link Between Worlds"
+    },
+    {
+      "id": 103,
+      "label": "Tower of Hera",
+      "type": "dungeon",
+      "game": "Link Between Worlds"
+    },
+    {
+      "id": 104,
+      "label": "House of Gales",
+      "type": "dungeon",
+      "game": "Link Between Worlds"
+    },
+    {
+      "id": 105,
+      "label": "Inside Hyrule Castle",
+      "type": "dungeon",
+      "game": "Link Between Worlds"
+    },
+    {
+      "id": 106,
+      "label": "Desert Palace",
+      "type": "dungeon",
+      "game": "Link Between Worlds"
+    },
+    {
+      "id": 107,
+      "label": "Dark Palace",
+      "type": "dungeon",
+      "game": "Link Between Worlds"
+    },
+    {
+      "id": 108,
+      "label": "Swamp Palace",
+      "type": "dungeon",
+      "game": "Link Between Worlds"
+    },
+    {
+      "id": 109,
+      "label": "Skull Woods",
+      "type": "dungeon",
+      "game": "Link Between Worlds"
+    },
+    {
+      "id": 110,
+      "label": "Thieves' Hideout",
+      "type": "dungeon",
+      "game": "Link Between Worlds"
+    },
+    {
+      "id": 111,
+      "label": "Ice Ruins",
+      "type": "dungeon",
+      "game": "Link Between Worlds"
+    },
+    {
+      "id": 112,
+      "label": "Turtle Rock",
+      "type": "dungeon",
+      "game": "Link Between Worlds"
+    },
+    {
+      "id": 113,
+      "label": "Lorule Castle",
+      "type": "dungeon",
+      "game": "Link Between Worlds"
+    },
+    {
+      "id": 114,
+      "label": "Divine Beast Vah Ruta",
+      "type": "dungeon",
+      "game": "Breath of the Wild"
+    },
+    {
+      "id": 115,
+      "label": "Divine Beast Vah Naboris",
+      "type": "dungeon",
+      "game": "Breath of the Wild"
+    },
+    {
+      "id": 116,
+      "label": "Divine Beast Vah Medoh",
+      "type": "dungeon",
+      "game": "Breath of the Wild"
+    },
+    {
+      "id": 117,
+      "label": "Divine Beast Vah Rudania",
+      "type": "dungeon",
+      "game": "Breath of the Wild"
+    },
+    {
+      "id": 118,
+      "label": "Hyrule Castle",
+      "type": "dungeon",
+      "game": "Breath of the Wild"
+    },
+    {
+      "id": 119,
+      "label": "Wind Temple",
+      "type": "dungeon",
+      "game": "Tears of the Kingdom"
+    },
+    {
+      "id": 120,
+      "label": "Fire Temple",
+      "type": "dungeon",
+      "game": "Tears of the Kingdom"
+    },
+    {
+      "id": 121,
+      "label": "Water Temple",
+      "type": "dungeon",
+      "game": "Tears of the Kingdom"
+    },
+    {
+      "id": 122,
+      "label": "Lightning Temple",
+      "type": "dungeon",
+      "game": "Tears of the Kingdom"
+    },
+    {
+      "id": 123,
+      "label": "Hyrule Castle",
+      "type": "dungeon",
+      "game": "Tears of the Kingdom"
+    },
+    {
+      "id": 124,
+      "label": "Suthorn Ruins",
+      "type": "dungeon",
+      "game": "Echoes of Wisdom"
+    },
+    {
+      "id": 125,
+      "label": "Gerudo Sanctum",
+      "type": "dungeon",
+      "game": "Echoes of Wisdom"
+    },
+    {
+      "id": 126,
+      "label": "Jabul Ruins",
+      "type": "dungeon",
+      "game": "Echoes of Wisdom"
+    },
+    {
+      "id": 127,
+      "label": "Hyrule Castle",
+      "type": "dungeon",
+      "game": "Echoes of Wisdom"
+    },
+    {
+      "id": 128,
+      "label": "Eldin Temple",
+      "type": "dungeon",
+      "game": "Echoes of Wisdom"
+    },
+    {
+      "id": 129,
+      "label": "Lanayru Temple",
+      "type": "dungeon",
+      "game": "Echoes of Wisdom"
+    },
+    {
+      "id": 130,
+      "label": "Faron Temple",
+      "type": "dungeon",
+      "game": "Echoes of Wisdom"
+    }
+  ]
+}
