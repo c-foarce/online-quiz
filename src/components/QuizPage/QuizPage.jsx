@@ -2,6 +2,7 @@
 import styles from './QuizPage.module.css'
 import buttonStyles from '../../styles/button.module.css'
 import textStyles from '../../styles/typography.module.css'
+import layoutStyles from '../../styles/cardLayout.module.css'
 
 import clsx from "clsx" //to help with applying various modules to one element easier, clsx import
 
@@ -37,7 +38,7 @@ function QuizPage({ onFinish }) {
 
     return (
         <>
-            <div className={styles.content}>
+            <div className={layoutStyles.content}>
                 <h1>Placeholder text. Quiz Page</h1>
 
 
@@ -50,23 +51,25 @@ function QuizPage({ onFinish }) {
                 <p>These buttons will be removed later, this is currently for app navigation</p>
 
             </div>
-            <div className={styles.actions}>
-                <button
-                    className={clsx(buttonStyles.button, buttonStyles.resultsButton)}
-                    onClick={onFinish}
-                >
-                    Go to Results
-                </button>
-
-                <button
+            <div className={layoutStyles.actions}>
+                {/* <button
                     className={clsx(buttonStyles.button, buttonStyles.submitButton)}
                     onClick={handleSubmitAnswer}
                 >
                     Increment counter
-                </button>
+                </button> */}
+                <div className={styles.answerBox}>
+
+                    <button className={clsx(buttonStyles.button, buttonStyles.submitButton)}>1.</button>
+                    <button className={clsx(buttonStyles.button, buttonStyles.submitButton)}>2.</button>
+                    <button className={clsx(buttonStyles.button, buttonStyles.submitButton)}>3.</button>
+                    <button className={clsx(buttonStyles.button, buttonStyles.submitButton)}>4.</button>
+
+                </div>
+
 
             </div>
-            
+
 
         </>
     )

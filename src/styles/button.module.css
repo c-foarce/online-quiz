@@ -11,6 +11,7 @@
     width: 200px;
 }
 
+/*Rules for specific buttons on the application, helpfully named and will be applied using clsx. Only affecting colour and slight visuals, dimensions and shape are defined in base selectors /\  */
 
 .startButton {
     background-color: lightblue;
@@ -30,9 +31,6 @@
 .testFeatureButton{
     background-color: lightgreen;
 }
-
-
-
 
 
 

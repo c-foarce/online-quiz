@@ -5,7 +5,7 @@
 }
 
 .actions {
-  flex-shrink: 0;       /* keeps the foter pinned to the bottom */
+  flex-shrink: 0;       /* keeps the footer pinned to the bottom */
 
   display: flex;
   justify-content: center;

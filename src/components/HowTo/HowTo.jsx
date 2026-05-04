@@ -15,8 +15,6 @@ function HowTo({ onBack, onStart }) {
 
                 <h1 className={styles.title}>This is placeholder text, expand later</h1>
                 <p>------</p>
-    
-
             </div>
 
             <div className={layoutStyles.actions}>
