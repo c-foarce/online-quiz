@@ -10,4 +10,44 @@ function buildQuestion() {
     //Filters out non-matching type items in the list. As of 4/5/26, only "dungeon" type is in the list
     const answerPool = answers.filter(item => item.type === correctAnswer.type)
 
+
+    // const answerPoolUnique = answerPool.filter(item =>
+    //     item.label !== correctAnswer.label &&
+    //     item.game !== correctAnswer.game
+    // );
+
+    const rand = Math.floor(Math.random() < 0.5 ? 0 : 1)
+
+    //FILTERING, this is going to be based on the type of question
+
+    //Random chance of:
+    // A "which dungeon is from GAME", answers will be DUNGEON
+    // B "which game contains DUNGEON", answers will be GAME
+
+    //in case of A, we want each answer to be a unique dungeon, so when assigning the
+    //three incorrect answers, the process is:
+    //SELECT - CHECK LABEL != CORRECTANSWER.LABEL, IF YES REPEAT, ELSE ADD, ITERATE 
+
+    //in case of B, we want each answer to be a unique game, so when assinging the
+    //three incorrect answers, the process is:
+    //SELECT - CHECK GAME != CORRECTANSWER.GAME, IF YES REPEAT, ELSE ADD, ITERATE 
+
+    switch (rand) {
+        case 0:
+            console.log("What DUNGEON is in game?");
+            const filteredPool = answerPool.filter(item => item.label != correctAnswer.label)
+            console.log(correctAnswer)
+            console.log(filteredPool)
+            break;
+
+        case 1:
+            console.log("What GAME contains dungeon?");
+            const filteredPool = answerPool.filter(item => item.game != correctAnswer.game)
+            console.log(correctAnswer)
+            console.log(filteredPool)
+            break;
+        default:
+            return "Error"
+    }
+
 }
