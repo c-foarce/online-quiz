@@ -14,26 +14,36 @@ function QuizPage({ onFinish }) {
     // const [currentQuestion, setCurrentQuestion] = useState(0);
     const [currentQuestion, setCurrentQuestion] = useState(1);
 
+    const [selectedAnswer, setSelectedAnswer] = useState(null);
+    const [submitted, setSubmitted] = useState(false);
+
     // Currently hardcoded but will later be dynamic/mutable
     // const totalQuestions = questions.length
     const totalQuestions = 10;
 
-
-    function handleSubmitAnswer() {
+    function handleNextQuestion() {
 
         // This logic will switch to:
         // if (currentQuestion === totalQuestions - 1) { ... }
         // when working toward a more dynamic quiz. Currently hardcoded at 10 but could change
         if (currentQuestion === totalQuestions) {
-            // alert("Reached 10")
-            { onFinish(); }
+            onFinish();
             return;
         }
 
-
         setCurrentQuestion(prev => prev + 1);
+
+        setSelectedAnswer(null); //sets chosen answer to default ready for next question
+        setSubmitted(false); //resets answer submission, therefore hides "next" button
     }
 
+    function handleSelectAnswer(index) {
+        //if the question is already over, lock users from breaking things
+        if (submitted) return;
+
+        setSelectedAnswer(index); //stores the option the user selected
+        setSubmitted(true); //flags "this question is over"
+    }
 
 
     return (
@@ -52,21 +62,43 @@ function QuizPage({ onFinish }) {
 
             </div>
             <div className={layoutStyles.actions}>
-                {/* <button
-                    className={clsx(buttonStyles.button, buttonStyles.submitButton)}
-                    onClick={handleSubmitAnswer}
-                >
-                    Increment counter
-                </button> */}
-                <div className={styles.answerBox}>
+                <div className={styles.questionLayout}>
 
-                    <button className={clsx(buttonStyles.button, buttonStyles.submitButton)}>1.</button>
-                    <button className={clsx(buttonStyles.button, buttonStyles.submitButton)}>2.</button>
-                    <button className={clsx(buttonStyles.button, buttonStyles.submitButton)}>3.</button>
-                    <button className={clsx(buttonStyles.button, buttonStyles.submitButton)}>4.</button>
+                    <div className={styles.answerBox}>
 
+                        <button
+                            className={clsx(buttonStyles.button, buttonStyles.submitButton)}
+                            onClick={() => handleSelectAnswer(0)}>
+                            1.
+                        </button>
+                        <button
+                            className={clsx(buttonStyles.button, buttonStyles.submitButton)}
+                            onClick={() => handleSelectAnswer(1)}>
+                            2.
+                        </button>
+                        <button
+                            className={clsx(buttonStyles.button, buttonStyles.submitButton)}
+                            onClick={() => handleSelectAnswer(2)}>
+                            3.
+                        </button>
+                        <button
+                            className={clsx(buttonStyles.button, buttonStyles.submitButton)}
+                            onClick={() => handleSelectAnswer(3)}>
+                            4.
+                        </button>
+
+                    </div>
+
+                    {submitted && (
+                        <div className={styles.proceedBox}>
+                            <button 
+                            className={clsx(buttonStyles.button, buttonStyles.proceedButton)}
+                            onClick={handleNextQuestion}>
+                                Next
+                            </button>
+                        </div>
+                    )}
                 </div>
-
 
             </div>
 
