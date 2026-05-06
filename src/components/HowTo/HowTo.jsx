@@ -5,10 +5,14 @@ import textStyles from '../../styles/typography.module.css'
 import layoutStyles from '../../styles/cardLayout.module.css'
 
 
-import clsx from "clsx"
+import clsx from "clsx" //to help with applying various modules to one element easier, clsx import
+
+import buildQuestion from '../../utils/quizLogic'
 
 
 function HowTo({ onBack, onStart }) {
+
+
     return (
         <>
             <div className={layoutStyles.content}>
@@ -30,6 +34,12 @@ function HowTo({ onBack, onStart }) {
                 >
                     Return
                 </button>
+
+
+                {/*THIS BUTTON IS JUST FOR TESTING AND LOGGING PURPOSES */}
+                <button
+                className={clsx(buttonStyles.button, buttonStyles.proceedButton)}
+                onClick={buildQuestion}>Log Test</button>
 
             </div>
         </>
