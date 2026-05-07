@@ -734,48 +734,54 @@
     },
     {
       "id": 123,
-      "label": "Hyrule Castle",
+      "label": "Spirit Temple",
       "type": "dungeon",
       "game": "Tears of the Kingdom"
     },
     {
       "id": 124,
+      "label": "Hyrule Castle",
+      "type": "dungeon",
+      "game": "Tears of the Kingdom"
+    },
+    {
+      "id": 125,
       "label": "Suthorn Ruins",
       "type": "dungeon",
       "game": "Echoes of Wisdom"
     },
     {
-      "id": 125,
+      "id": 126,
       "label": "Gerudo Sanctum",
       "type": "dungeon",
       "game": "Echoes of Wisdom"
     },
     {
-      "id": 126,
+      "id": 127,
       "label": "Jabul Ruins",
       "type": "dungeon",
       "game": "Echoes of Wisdom"
     },
     {
-      "id": 127,
+      "id": 128,
       "label": "Hyrule Castle",
       "type": "dungeon",
       "game": "Echoes of Wisdom"
     },
     {
-      "id": 128,
+      "id": 129,
       "label": "Eldin Temple",
       "type": "dungeon",
       "game": "Echoes of Wisdom"
     },
     {
-      "id": 129,
+      "id": 130,
       "label": "Lanayru Temple",
       "type": "dungeon",
       "game": "Echoes of Wisdom"
     },
     {
-      "id": 130,
+      "id": 131,
       "label": "Faron Temple",
       "type": "dungeon",
       "game": "Echoes of Wisdom"
