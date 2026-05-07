@@ -1,14 +1,14 @@
 import quizAnswers from '../data/answers.json'
 
 function buildQuestion() {
-
+    console.clear()
 
     const { answers } = quizAnswers;
 
     //selecting a random answer from the dataset, might need more nesting once other "answer.type"s are implemented
 
-    // const correctAnswer = answers[Math.floor(Math.random() * answers.length)];
-    const correctAnswer = answers[29];
+    const correctAnswer = answers[Math.floor(Math.random() * answers.length)];
+    // const correctAnswer = answers[29];
 
     //Filters out non-matching type items in the list. As of 4/5/26, only "dungeon" type is in the list
 
@@ -40,7 +40,7 @@ function buildQuestion() {
 
     )
 
-    //This takes the correctAnswer label, gets any value that is in the .game key that has a .label that matches correctAnswer, the uses .map() to just get the .game value and put into a set
+    //This takes the correctAnswer.label, gets any value that is in the .game key that has a .label that matches correctAnswer, the uses .map() to just get the .game value and put into a set
     //This set will then be used to filter the whole answers array to remove answers that could confuse
     //This solves point B
 
@@ -51,43 +51,42 @@ function buildQuestion() {
             .map(i => i.label)
     )
 
+    //This takes the correctAnswer.game, and builds a Set that contains all the entiries that have the same .game value as correctAnswer. To make sure we only have the .label and not the whole object, .map() is used
+    //This will then be used to filter the answers array, removing all entries that could confuse the user. Removes all duplicate labels, and all entries that share .game. 
 
-    //  _____      _      ____    _  __
-    // |_   _|    / \    / ___|  | |/ /
-    //   | |     / _ \   \___ \  | ' / 
-    //   | |    / ___ \   ___) | | . \ 
-    //   |_|   /_/   \_\ |____/  |_|\_\
-    //
-    //
-    //
-    // FILTER OUT DUNGEONS CORRECTLY - SIMPLE LABEL THEN GAME MATCH IS NOT ENOUGH. NEED TO GO ONE STEP BEYOND AND REMOVE ENTRIES WHERE THE .LABEL IS SIMILAR TO *ANY* OF THE .LABELS IN THE CORRECTANSWER.GAME
-    //EG. IF THE ANSWER IS "SPIRIT TEMPLE", THE CURRENT CODE REMOVES THAT, AND ALL OCARINA GAMES, BUT THERE ID A FIRE TEMPLE IN OOT AND ALSO ONE IN SPIRIT TRACKS. SO WE NEED TO REMOVE THOSE INSTANCES AS WELL.
-
-
-
-    // const testSet = new Set(
-    //     answerPool
-    //     .filter(i=>i.label === correctAnswer.label) //similar to above, we're searching for any repeat occurences. But this time we have to use this for another purpose
-    // )
-    // console.log("Test Set: ", testSet)
 
     console.log(gamesToRemove, labelsToRemove)
 
+
+    const displayAns = []
+
     switch (rand) {
-        case 0: {
+        case 0: { //ANSWERS WILL BE .LABEL
             console.log(`What DUNGEON is in ${correctAnswer.game}?`);
-            filteredPool = answerPool.filter(item => (item.label != correctAnswer.label) && (item.game != correctAnswer.game) && (!labelsToRemove.has(item.label))) // This needs changing, this removes all correctanswer.label's similar games,but we need the other .labels simlar games removed via a set as well
             console.log('Correct:', correctAnswer.label)
+
+            filteredPool = answerPool.filter(item => (item.game != correctAnswer.game) && (!labelsToRemove.has(item.label))) // This needs changing, this removes all correctanswer.label's similar games,but we need the other .labels simlar games removed via a set as well
+            // (item.label != correctAnswer.label) && --Taken from above filter conditions, removed since the Set condition also covers this, kept around in case of errors and need to default to this
             console.log('Filtered Pool:', filteredPool)
+
+            displayAns.push(...generateDecoys(filteredPool, 3, "label").map(i => i.label), correctAnswer.label)
+
+            console.log(displayAns)
             break;
         }
 
-        case 1: {
+        case 1: { //ANSWERS WILL BE .GAME
             console.log(`What GAME contains ${correctAnswer.label}?`);
-            filteredPool = answerPool.filter(item => !gamesToRemove.has(item.game))
             console.log('Correct:', correctAnswer.game)
-            console.log(gamesToRemove)
+
+            filteredPool = answerPool.filter(item => !gamesToRemove.has(item.game))
+
             console.log('Filtered Pool:', filteredPool)
+
+            displayAns.push(...generateDecoys(filteredPool, 3, "label").map(i => i.game), correctAnswer.game)
+
+            console.log(displayAns)
+
             break;
         }
         default:
@@ -96,6 +95,55 @@ function buildQuestion() {
             return;
     }
 
+
+    // /==================================\
+    // ||                                ||
+    // ||   _______        _____ _  __   ||
+    // ||  |__   __|/\    / ____| |/ /   ||
+    // ||     | |  /  \  | (___ | ' /    ||
+    // ||     | | / /\ \  \___ \|  <     ||
+    // ||     | |/ ____ \ ____) | . \    ||
+    // ||     |_/_/    \_\_____/|_|\_\   ||
+    // ||                                ||
+    // \==================================/
+
+    //Now the decoys are made, shuffle then transfer it to the component.
+    //Then, attach each string to the buttons, pass it as objects, {text,correct}, click events dictated by correct-ness, possible change of font based on text size
+    //Then run build mode, get it working online, then test on devices
+
+
+
+    function generateDecoys(pool, count, attribute) {
+
+        //At this point, the array has been filtered according to correctAnswer's values, so pulling the decoy answers is possible
+
+        const decoys = [] //store of the 3 decoy answers
+        const used = new Set() //record containing the "used" array attribute values so the 3 decoy answers are unique
+
+        while (decoys.length < count) {
+            const candidate = pool[
+                Math.floor(Math.random() * pool.length)
+            ]
+
+            const id = candidate[attribute]
+            // const id=candidate."attribute", in dont notation terms
+            // bracket notation, was stuck trying to work out how to get dynamic key lookup, forgot this also works
+            // used BN so that the function can be generic for either branch of the case
+
+
+
+            if (used.has(id)) continue
+
+            used.add(id) //if id is unique and not already used, add it to the set and then push the id to the decoys array to ship
+            // console.log(candidate)
+            decoys.push(candidate)
+
+            console.log(`Decoy number ${decoys.length}: ${id}`) //for testing, logs each entry of the decoys so any errors can start to be traced
+
+        }
+
+        return decoys
+    }
 }
 
 export default buildQuestion
