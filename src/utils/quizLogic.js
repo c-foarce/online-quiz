@@ -76,7 +76,7 @@ function buildQuestion() {
     switch (rand) {
         case 0: {
             console.log(`What DUNGEON is in ${correctAnswer.game}?`);
-            filteredPool = answerPool.filter(item => (item.label != correctAnswer.label) && (item.game != correctAnswer.game)) // This needs changing, this removes all correctanswer.label's similar games,but we need the other .labels simlar games removed via a set as well
+            filteredPool = answerPool.filter(item => (item.label != correctAnswer.label) && (item.game != correctAnswer.game) && (!labelsToRemove.has(item.label))) // This needs changing, this removes all correctanswer.label's similar games,but we need the other .labels simlar games removed via a set as well
             console.log('Correct:', correctAnswer.label)
             console.log('Filtered Pool:', filteredPool)
             break;
