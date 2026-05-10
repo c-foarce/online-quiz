@@ -7,8 +7,11 @@ Bult to test my understanding of React and JSX capabilities, and creating dynami
 
 Built with a single-page approach using dynamic component rendering and managing state. 
 
+The quiz can be found [Here.](https://c-foarce.github.io/online-quiz/)
+
 ## Features
-- 
-- 
+- Uses a JSON file that was built from a spreadsheet, converted to CSV and then to JSON, and is accessed to create arrays and the build the quiz dynamically
+- The quiz could in theory be expanded to other question types, for now i have it only focused on dungeons that exist in most of the mainline Zelda games
+- Further expansions can be easily applied with some simple tweaking of the base JSON file, and since the questions are built from that instead of being hardcoded in, there's not masses of alterations to be made
 - 
 
