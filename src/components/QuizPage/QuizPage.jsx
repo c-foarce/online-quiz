@@ -8,20 +8,23 @@ import clsx from "clsx" //to help with applying various modules to one element e
 
 import { useState, useEffect } from 'react'
 
-import buildQuestion from '../../utils/quizLogic'
+import quizAnswers from '../../data/answers.json' //JSON object storing all entries
 
-import quizAnswers from '../../data/answers.json'
 import QuizBuilder from '../../utils/QuizBuilder'
+
+
+// import buildQuestion from '../../utils/quizLogic' - REMOVED SINCE NEW FILE MADE FOR HANDLING - QUIZBUILDER
+
 
 function QuizPage({ onFinish }) {
 
 
-    const [currentQuestion, setCurrentQuestion] = useState(0);
-
-    const [selectedAnswer, setSelectedAnswer] = useState(null);
-    const [submitted, setSubmitted] = useState(false);
-    const [quiz, setQuiz] = useState([])
-    const [score, setScore] = useState(0)
+    const [currentQuestion, setCurrentQuestion] = useState(0); //tracks the current question for accessing the array of questions
+    const [selectedAnswer, setSelectedAnswer] = useState(null); //stores the answer the user selects
+    const [submitted, setSubmitted] = useState(false); //handling "locking" the question once it's answered
+    const [quiz, setQuiz] = useState([]) //contains the constructed quiz
+    const [score, setScore] = useState(0) //tracks score from quiz
+    const [answersLog, setAnswersLog] = useState([]) //used as a log of correct answers
 
 
     const totalQuestions = quiz.length;
@@ -42,7 +45,11 @@ function QuizPage({ onFinish }) {
         if (!quiz.length) return;
 
         if (currentQuestion === totalQuestions - 1) {
-            onFinish();
+            onFinish({
+                score,
+                total: quiz.length,
+                answersLog
+            });
             return;
         }
 
@@ -72,6 +79,17 @@ function QuizPage({ onFinish }) {
         if (answer.correct) {
             setScore(prev => prev + 1); //if the user was right, incremement the counter, later used for results
         }
+
+        //updates the quizLog with the just completed step of the quiz for use later
+        setAnswersLog(prev => [
+    ...prev,
+    {
+        question: question.prompt,
+        selected: answer.text,
+        correct: question.answers.find(a => a.correct).text,
+        isCorrect: answer.correct
+    }
+]);
     }
 
     const question = quiz[currentQuestion]

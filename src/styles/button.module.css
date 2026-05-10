@@ -14,24 +14,32 @@
 /*Rules for specific buttons on the application, helpfully named and will be applied using clsx. Only affecting colour and slight visuals, dimensions and shape are defined in base selectors /\  */
 
 .startButton {
-    background-color: lightblue;
+    background-color: rgb(0, 158, 221);
 }
+
+
 .helpButton {
-    background-color: pink;
+    background-color: #FEFB67;
 }
+
+
 .backButton{
-    background-color: lightcoral;
+    background-color: rgb(255, 148, 43);
 }
-.resultsButton{
-    background-color: orange;
-}
+
+
+
+
 .submitButton {
     font-size:1em;
-    background-color:white
+    background-color:#BFECF1
 }
+
+
 .proceedButton{
-    background-color: lightskyblue
+    background-color: #00E4FF
 }
+
 
 
 
@@ -39,8 +47,8 @@
 
 /*These are primarily for quiz logic*/
 .correctAnswer{
-    background-color: lightgreen;
+    background-color: rgb(79,179,128)
 }
 .incorrectAnswer{
-    background-color:rgb(255, 84, 84);
+    background-color:rgb(232, 74, 66);
 }

@@ -17,10 +17,13 @@ import imageBackground from '../../assets/images/zelda-quiz-bg.jpg'
 
 function App() {
 
-  const [score,setScore] = useState(0) //stores and sets the user's score, in App since it's the lowest ancestor of the components that need it
+  const [score, setScore] = useState(0) //stores and sets the user's score, in App since it's the lowest ancestor of the components that need it
 
   // used for navigating the various components using state
   const [screen, setScreen] = useState('welcome')
+
+  //brings up the results from the Quiz to ship to Results
+  const [results, setResults] = useState(null)
 
   //function that sets the screen to be displayed inside the central box
   function goTo(newScreen) {
@@ -39,22 +42,29 @@ function App() {
         <div className={styles.overlay}>
 
           <Layout>
+
             {screen === "welcome" && (
               <Welcome
                 onHowTo={() => goTo("howto")}
                 onStart={() => goTo("quiz")}
               />)}
+
             {screen === "howto" && (
               <HowTo
                 onBack={() => goTo("welcome")}
                 onStart={() => goTo("quiz")}
               />)}
+
             {screen === "quiz" && (
               <QuizPage
-                onFinish={() => goTo("results")}
-              />)}
+                onFinish={(quizResults) => {
+                  setResults(quizResults);
+                  goTo("results");
+                }} />)}
+
             {screen === "results" && (
               <Results
+                results={results}
                 onReturn={() => goTo("welcome")}
               />)}
 
