@@ -9,6 +9,8 @@
 
     height: 100px;
     width: 200px;
+
+    color:black;
 }
 
 /*Rules for specific buttons on the application, helpfully named and will be applied using clsx. Only affecting colour and slight visuals, dimensions and shape are defined in base selectors /\  */
