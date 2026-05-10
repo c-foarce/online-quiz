@@ -7,10 +7,25 @@ import layoutStyles from '../../styles/cardLayout.module.css'
 
 import clsx from "clsx" //to help with applying various modules to one element easier, clsx import
 
+import { useState } from 'react'
 import buildQuestion from '../../utils/quizLogic'
+import QuizBuilder from '../../utils/QuizBuilder'
+
+import quizAnswers from '../../data/answers.json'
+
 
 
 function HowTo({ onBack, onStart }) {
+
+    const handleTestClick = () => {
+        const builder = new QuizBuilder(quizAnswers)
+
+        const mode = Math.random() < 0.5 ? "game" : "dungeon"
+
+        const result = builder.buildQuestion(mode)
+
+        console.log(result)
+    }
 
 
     return (
@@ -35,11 +50,6 @@ function HowTo({ onBack, onStart }) {
                     Return
                 </button>
 
-
-                {/*THIS BUTTON IS JUST FOR TESTING AND LOGGING PURPOSES */}
-                <button
-                className={clsx(buttonStyles.button, buttonStyles.proceedButton)}
-                onClick={buildQuestion}>Log Test</button>
 
             </div>
         </>

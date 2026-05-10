@@ -26,10 +26,11 @@
     background-color: orange;
 }
 .submitButton {
-    background-color:orchid
+    font-size:1em;
+    background-color:white
 }
 .proceedButton{
-    background-color: lightgreen;
+    background-color: lightskyblue
 }
 
 
@@ -38,8 +39,8 @@
 
 /*These are primarily for quiz logic*/
 .correctAnswer{
-    background-color: green;
+    background-color: lightgreen;
 }
 .incorrectAnswer{
-    background-color:red;
+    background-color:rgb(255, 84, 84);
 }
