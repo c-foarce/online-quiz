@@ -7,10 +7,18 @@
     margin: 0px 10px;
     border-radius: 6px;
 
-    height: 100px;
+    min-height: 100px;
     width: 200px;
 
-    color:black;
+    color:black; 
+    /*This is to enforce the colour for mobile devices, in testing i saw that this changed to blue since they're technically links i guess idk*/
+}
+
+@media (max-width: 600px) {
+    .button {
+        width: 90%;
+        max-width: 200px;
+    }
 }
 
 /*Rules for specific buttons on the application, helpfully named and will be applied using clsx. Only affecting colour and slight visuals, dimensions and shape are defined in base selectors /\  */
