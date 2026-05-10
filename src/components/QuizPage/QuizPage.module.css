@@ -5,6 +5,11 @@
   grid-template-columns: repeat(2, 1fr); /* 2 columns */
   gap: 12px; /* space between buttons */
 }
+@media (max-width: 600px) {
+  .answerBox {
+    grid-template-columns: 1fr;
+  }
+}
 .proceedBox {
   padding-top:1rem
 }
