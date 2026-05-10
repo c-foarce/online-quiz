@@ -14,7 +14,7 @@
     /*This is to enforce the colour for mobile devices, in testing i saw that this changed to blue since they're technically links i guess idk*/
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
     .button {
         width: 90%;
         max-width: 200px;
