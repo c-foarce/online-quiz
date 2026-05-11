@@ -123,13 +123,7 @@ function QuizPage({ onFinish }) {
                     <div className={styles.answerBox}>
 
                         {question?.answers.map((answer, index) => (
-                            // <button
-                            //     key={index}
-                            //     className={clsx(buttonStyles.button, buttonStyles.submitButton)}
-                            //     onClick={() => handleSelectAnswer(answer)}
-                            // >
-                            //     {answer.text}
-                            // </button>
+
                             <button
                                 key={index}
                                 className={clsx(

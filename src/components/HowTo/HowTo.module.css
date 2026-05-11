@@ -1,16 +1,30 @@
 .helpContainer {
-    display:flex;
+    display: flex;
     flex-direction: row;
-justify-content: center;
+    justify-content: center;
 }
+
 .helpDescriptor {
     text-align: center;
-    border:black;
-    border-style: dotted;
-    width:50%
+
+    width: 50%;
+    display:flex;
+    flex-direction: column;
 }
+
+
 .answerBox {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns */
-  gap: 12px; /* space between buttons */
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 4px;
+    justify-content: center;
+
+    width: fit-content;
+    min-height: unset;
+
+    
+}
+
+.proceedBox {
+  padding-top:0.5rem
 }

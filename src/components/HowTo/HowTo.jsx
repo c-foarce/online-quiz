@@ -7,7 +7,7 @@ import layoutStyles from '../../styles/cardLayout.module.css'
 
 import clsx from "clsx" //to help with applying various modules to one element easier, clsx import
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import buildQuestion from '../../utils/quizLogic'
 import QuizBuilder from '../../utils/QuizBuilder'
 
@@ -17,15 +17,19 @@ import quizAnswers from '../../data/answers.json'
 
 function HowTo({ onBack, onStart }) {
 
-    const handleTestClick = () => {
-        const builder = new QuizBuilder(quizAnswers)
+    //The below Effect is purely for some visual display of what happens during the quiz. no onClick event, just showing what does happen
 
-        const mode = Math.random() < 0.5 ? "game" : "dungeon"
 
-        const result = builder.buildQuestion(mode)
+    const [revealed, setRevealed] = useState(false);
 
-        console.log(result)
-    }
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setRevealed(prev => !prev);
+        }, 2500);
+
+        return () => clearInterval(interval);
+    }, []);
+
 
 
     return (
@@ -47,17 +51,60 @@ function HowTo({ onBack, onStart }) {
 
                         <h4>Example Question</h4>
 
-                        <div className={layoutStyles.actions}>
+                        <div className={styles.answerBox}>
 
-                            <button className={clsx(buttonStyles.button,buttonStyles.exampleButton)}>Example Answer</button>
+                            <button
+                                className={clsx(
+                                    buttonStyles.button,
+                                    buttonStyles.exampleButton,
+                                    revealed && buttonStyles.correctAnswer
+                                )}
+                            >
+                                {revealed ? "Correct Answer" : "Answer"}
+                            </button>
 
-                            <button>Example Answer</button>
+                            <button
+                                className={clsx(
+                                    buttonStyles.button,
+                                    buttonStyles.exampleButton
+                                )}
+                            >
+                                Answer
+                            </button>
 
-                            <button>Example Answer</button>
+                            <button
+                                className={clsx(
+                                    buttonStyles.button,
+                                    buttonStyles.exampleButton
+                                )}
+                            >
+                                Answer
+                            </button>
 
-                            <button>Example Answer</button>
+                            <button
+                                className={clsx(
+                                    buttonStyles.button,
+                                    buttonStyles.exampleButton,
+                                    revealed && buttonStyles.incorrectAnswer
+                                )}
+                            >
+                                {revealed ? "Incorrect Answer" : "Answer"}
+                            </button>
 
                         </div>
+
+                        <div className={styles.proceedBox}>
+                            {revealed && (
+                                <button
+                                    className={clsx(
+                                        buttonStyles.button,
+                                        buttonStyles.exampleButton,
+                                        buttonStyles.proceedButton
+                                    )}
+                                >Next</button>
+                            )}
+                        </div>
+
                     </div>
                 </div>
 

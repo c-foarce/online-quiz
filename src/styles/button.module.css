@@ -50,12 +50,13 @@
 
 
 .proceedButton {
-    background-color: #00E4FF
+    background-color: #00E4FF !important
 }
 
 .exampleButton {
     font-size:1em;
-    background-color: #FDFEE5;
+    background-color: #BFECF1;
+    min-height:75px !important
 }
 
 
@@ -65,9 +66,9 @@
 
 /*These are primarily for quiz logic*/
 .correctAnswer {
-    background-color: rgb(79, 179, 128)
+    background-color: rgb(79, 179, 128) !important
 }
 
 .incorrectAnswer {
-    background-color: rgb(232, 74, 66);
+    background-color: rgb(232, 74, 66) !important
 }
