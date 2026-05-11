@@ -1,0 +1,11 @@
+.helpContainer {
+    display:flex;
+    flex-direction: row;
+justify-content: center;
+}
+.helpDescriptor {
+    text-align: center;
+    border:black;
+    border-style: dotted;
+    width:50%
+}

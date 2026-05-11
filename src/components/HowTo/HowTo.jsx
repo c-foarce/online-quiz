@@ -32,9 +32,23 @@ function HowTo({ onBack, onStart }) {
         <>
             <div className={layoutStyles.content}>
 
-                <h1 className={styles.title}>This is placeholder text, expand later</h1>
-                <p>------</p>
-                <p>Testing the live update of deployment</p>
+                <h1 className={styles.title}>Understanding how to play this quiz</h1>
+
+                <div className={styles.helpContainer}>
+
+                    <div className={styles.helpDescriptor}>
+
+                        <h1>TEST</h1>
+
+                    </div>
+
+                    <div className={styles.helpDescriptor}>
+
+                        <h1>YEST</h1>
+
+                    </div>
+                </div>
+
             </div>
 
             <div className={layoutStyles.actions}>
