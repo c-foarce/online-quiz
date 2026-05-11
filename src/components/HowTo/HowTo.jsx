@@ -38,14 +38,26 @@ function HowTo({ onBack, onStart }) {
 
                     <div className={styles.helpDescriptor}>
 
-                        <h1>TEST</h1>
-
+                        <p>You will be asked a question, and given 4 responses.</p>
+                        <p> Once you have decided and selected an answer, it is immediately locked in and your answer will be checked.</p>
+                        <p> A button will appear to load the next question.</p>
                     </div>
 
                     <div className={styles.helpDescriptor}>
 
-                        <h1>YEST</h1>
+                        <h4>Example Question</h4>
 
+                        <div className={layoutStyles.actions}>
+
+                            <button className={clsx(buttonStyles.button,buttonStyles.exampleButton)}>Example Answer</button>
+
+                            <button>Example Answer</button>
+
+                            <button>Example Answer</button>
+
+                            <button>Example Answer</button>
+
+                        </div>
                     </div>
                 </div>
 
