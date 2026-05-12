@@ -21,6 +21,9 @@ The quiz can be found [Here.](https://c-foarce.github.io/online-quiz/)
 - Javascript
 - CSS Modules, with help from clsx for combining modules
 
+### Intstallation Instructions
+Clone the repository, install the relevant dependencies with ```npm install```, run locally and open the local server in browser
+
 ## Quiz System
 The quiz is dynamically created from the dataset by the ```QuizBuilder``` class which
 - Randomly selects an entry from the dataset, and depdnign on the question mode pulls the relevant information to form the "answer"

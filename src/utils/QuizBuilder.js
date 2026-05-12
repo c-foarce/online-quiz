@@ -152,9 +152,9 @@ class QuizBuilder {
     buildQuiz(count) {
         const questions = []
 
-        for (let i=0;i<count;i++) {
+        for (let i = 0; i < count; i++) {
 
-            const mode = Math.random() <0.5 ? "game":"dungeon"
+            const mode = Math.random() < 0.5 ? "game" : "dungeon"
 
             questions.push(this.buildQuestion(mode))
         }
