@@ -26,7 +26,7 @@ Clone the repository, install the relevant dependencies with ```npm install```, 
 
 ## Quiz System
 The quiz is dynamically created from the dataset by the ```QuizBuilder``` class which
-- Randomly selects an entry from the dataset, and depdnign on the question mode pulls the relevant information to form the "answer"
+- Randomly selects an entry from the dataset, and depending on the question mode pulls the relevant information to form the "answer"
 - Using that answer, and other information given, decoy answers are generated. But to be kind to users, there is no chance of "false friends", any possibility of duplicate answers or two answers "technically" being correct is removed. Each answer has one correct answer of the 4 on display
 - Shuffles the answer order, so there's no chance of just clicking the first answer and guaranteeing a 10/10
 
